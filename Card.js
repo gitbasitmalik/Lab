@@ -1,27 +1,13 @@
-import React from 'react';
+
 import './Card.css';
-import { BiChevronRight } from 'react-icons/bi'
-function Card({ card }) {
+function Card(props) 
+{
     return (
-        <div className='card-main'>
-            {
-                card.map((ca) => (
-                    <div className='card-container' key={ca.id}>
-                        <span className='card-heading'>{ca.heading}</span>
-                        <hr className='card-hr' />
-                        <div>
-                        {
-                            ca.subItem.map((sub)=>(
-                                <span className='card-text'><BiChevronRight />{sub.cardText}</span>
-                            ))
-                        }
-                        </div>
-                        
-                    </div>
-                ))
-            }
+      <div className='left-main'>
+        <h6>{props.cardData}</h6>
+        <p className="runs">{props.runsData}</p>
       </div>
-);
+    );
 }
 
 export default Card;
