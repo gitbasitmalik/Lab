@@ -1,3 +1,4 @@
+ import { Link } from "react-router-dom";
 function Footer()
 {
     return (
@@ -15,7 +16,7 @@ function Footer()
                             <li>West Indies vr Afghanistan</li>
                             <li>UAE vr Bangladesh</li>
                             <li>Psl</li>
-                            <li>QEA Trophy</li>
+                           <Link to="/qeoTrophy"><li>QEA Trophy</li></Link>
                             <li>World cup 2022</li>
                             <li>Woman cup</li>
                         </ul>
@@ -37,7 +38,7 @@ function Footer()
                         <hr />
                         <ul className="list list-unstyled">
                             <li>Android App</li>
-                            <li>Ios App</li>
+                            <Link to="/IosApp"><li>Ios App</li></Link>
                         </ul>
                     </div>
                    
