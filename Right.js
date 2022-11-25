@@ -4,6 +4,7 @@ import "./Right.css";
 function Right() {
     const[score,setScore]=  useState([
         {
+            id: "1",
             name: "Quaid e Azam Trophy",   
             team1: "Sindh*",
             team2: "Balouchistan",
@@ -12,6 +13,7 @@ function Right() {
 
         },
         {
+            id: "2",
             name: "",
             team1: "Central Punjab*",
             team2: "Southern Punjab",
@@ -20,6 +22,7 @@ function Right() {
 
         },
         {
+            id: "3",
             name: "",
             team1: "North (Pakistan)*",
             team2: "Kyber Pakhtoonkhawa",
@@ -30,6 +33,7 @@ function Right() {
         }
     ]);
     
+    
        
     
     return ( 
@@ -38,7 +42,7 @@ function Right() {
         <div>
           <div class="wrapper">
             <div class="grid grid--4">
-              <div class="grid__item">
+              <div class="grid__item"  >
                 <article>
                     <h4>{totalscore.name}</h4>
                   <h6>{totalscore.team2}</h6>
@@ -49,6 +53,7 @@ function Right() {
                   <span>{totalscore.tscore}</span> <span>{totalscore.over}</span>
                   </h6> 
                 </article>
+                
                 <br></br>
                 <br></br>
                 
