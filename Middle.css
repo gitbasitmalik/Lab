@@ -3,13 +3,16 @@
   }
 
   .card{
-    width: 400px;
-    height: 400px;
-    margin-left: 80px;
-  }
+    display: flex;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+  
+}
 
   .card__title
   {
+    display: flex;
     background-color: black;
     color: white;
   }
@@ -17,4 +20,17 @@
   {
     box-shadow: 5px 5px 5px;
   }
-
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+  flex: 50%;
+  overflow: hidden;
+  }
+.flex{
+  display: flex;
+  height: 100px;
+  width: 100px;
+  
+}
