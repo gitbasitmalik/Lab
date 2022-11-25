@@ -10,9 +10,9 @@ function Main()
         <div>
             <div className="row">
 
-            <div className="col-md-12 col-12" style={{height:"58px"}}><Navbar/></div>     
+            <div className="col-md-12 col-12" style={{height:"auto"}}><Navbar/></div>     
             <div className="col-md-3 col-12" style={{height:"auto" }}><Left/></div>
-            <div className="col-md-6 col-12" style={{height:"auto" }}><Middle/></div>  
+            <div className="col-md-6 col-12" style={{height:"auto"}}><Middle/></div>  
             <div className="col-md-3 col-12" style={{height:"auto"}}><Right/></div>     
             
             </div>
