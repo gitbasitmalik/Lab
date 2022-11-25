@@ -1,50 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Card from './Card';
  function Left() {
-    const [cardDetails, setCardDetails] = useState([
-        {
-            id: '1',
-            heading: 'Quick Links',
-            subItem:[
-                {cardText:'T20 timeout'},
-                {cardText:'T20 Time Out'},
-                {cardText:'Fantasy pick'},
-                {cardText:'ICC Ranking'}
-            ]
-        },
-        {
-            id: '2',
-            heading: 'ESPN cricinfo App',
-            subItem:[
-                {cardText:'Android App'},
-                {cardText:'ios App'}
-            ]
-        },
-        {
-            id: '3',
-            heading: ' Follow ESPN cricinfo',
-            subItem:[
-                {cardText:'Facebook'},
-                {cardText:'Instagram'},
-                {cardText:'Youtube'},
-                {cardText:'Twitter'}
-            ]
-        },
-        {
-            id: '4',
-            heading: 'ESPN Sites',
-            subItem:[
-                {cardText:'ESPN'},
-                {cardText:'The Cricket Monthly'}
-            ]
-        },
+    const [cardDetails, setCardDetails] = useState("Pakistan*");
+    const [runs , setRuns] = useState("(152/0 ov)");
+    const [cardDetails1, setCardDetails1] = useState("New zealand");
+    const [cardDetails2, setCardDetails2] = useState("South Africa");
+    const [cardDetails3, setCardDetails3] = useState("India*");
+    const [runs1 , setRuns1] = useState("(152/8 ov)");
 
-    ]);
 
-  return (
-    <div className='left-sidebar'>
-      < Card card={cardDetails}/>
-</div>
+   
+  return(
+    
+    <div>
+
+    <Card cardData = {cardDetails}/>
+    <Card cardData = {cardDetails1}/>
+    <Card runsData = {runs}/>
+    <br></br>
+    <Card cardData = {cardDetails2}/>
+    <Card cardData = {cardDetails3}/>
+    <Card runsData = {runs1}/>
+ 
+    </div>
 );
 }
 
